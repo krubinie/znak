@@ -1,0 +1,49 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.znak {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border-radius: 50%;
+  position: relative;
+}
+
+.znak::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 12%;
+  width: 75%;
+  height: 17%;
+  background-color: white;
+  transform: translateY(-50%);
+}
+	
+.dashborder {
+    border: 2px dashed blue;
+    padding: 10px;
+    color: black;
+    background-color: lightblue;
+}
+
+.dottedborder {
+    border: 2px dotted blue;
+    padding: 10px;
+    color: black;
+    background-color: lightblue;
+}
+
